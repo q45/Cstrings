@@ -5,14 +5,18 @@ using namespace std;
 
 int main() {
 
-	char str1[] = "Nebraska is beating Mississippi State right now";
-	const int MAX = 80;
-	char str2[MAX];
+const int DAYS = 7;
+const int MAX = 10;
 
-	strcpy(str2 , str1);
-	cout << str2 << endl;
+char star[DAYS][MAX] = { 
+	"Sunday", "Monday", "Tuesday","Thursday","Friday","Saturday"
 
-	cout << str2[4] << endl;
+};
+
+for (int i = 0; i < DAYS; i++)
+{
+	cout << star[i] << endl;
+}
 
 	system("pause");
 	return 0;
